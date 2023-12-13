@@ -7,11 +7,11 @@ let lastRenderTime = 0
 let gameOver = false
 
 function main (currentTime){
-    if(gameOver){ 
-       if (confirm("You lose. Press OK to restart.")){
+    if (gameOver){
+        if(confirm("You lose, press ok to continue")){
             window.location = "/"
-       }
-       return
+        }
+        return
     }
 
 

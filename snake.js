@@ -36,11 +36,11 @@ export function onSnake(position, { ignoreSnakeHead = false} = {}) {
 }
 
 export function getSnakeHead () {
-    return (snakeBody[0], { ignoreSnakeHead : true})
+    return (snakeBody[0])
 }
 
 export function snakeIntersection(){
-    return onSnake(snakeBody[0])
+    return onSnake(snakeBody[0], { ignoreSnakeHead : true})
 }
 
 function equalPositions (pos1, pos2) {
